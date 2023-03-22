@@ -149,6 +149,9 @@ header ul li:not(:last-child) {
   padding-right: 1em;
   border-right: 1px solid black;
 }
+header ul a:hover {
+  padding: 0 1em;
+}
 
 /*------------------------------------*\
                   MAIN

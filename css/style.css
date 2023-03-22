@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/*------------------------------------*\
+          DEFINE COLOR & SHAPES
+\*------------------------------------*/
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body, div, span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: #2C3333 #ebebeb;
+  scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+}
+
+html::-webkit-scrollbar {
+  width: 12px;
+  background-color: #ebebeb;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #2C3333;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.7em;
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #0E8388;
+  transition: all 0.2s ease 0.1s;
+  text-decoration: none;
+}
+a:hover {
+  color: #E49393;
+}
+
+svg {
+  transition: all 0.2s ease 0.1s;
+}
+svg:hover {
+  fill: #E49393;
+}
+
+button {
+  min-width: 40px;
+  min-height: 40px;
+  color: white;
+  padding: 0.6em 2em;
+  cursor: pointer;
+  transition: all 0.2s ease 0.1s;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #0E8388;
+  background: #0E8388;
+  font-size: medium;
+}
+button:hover {
+  color: #1b1b1b;
+  border: 2px solid #E49393;
+  background: #E49393;
+}
+
+hr {
+  color: black;
+  width: 60px;
+}
+
+section {
+  min-height: 30vh;
+  padding: 3em 1.5em 1em 1.5em;
+}
+
+article {
+  min-height: 200px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+figcaption {
+  display: flex;
+  gap: 0.6em;
+  flex-wrap: wrap;
+}
+figcaption span {
+  background-color: #2C3333;
+  color: white;
+  padding: 0.4em 1em;
+  border-radius: 20px;
+}
+figcaption span:nth-of-type(3n+2) {
+  background-color: #2E4F4F;
+  color: white;
+}
+figcaption span:nth-of-type(3n+3) {
+  background-color: #7ec2ba;
+  color: white;
+}
+
+/*------------------------------------*\
+                HEADER
+\*------------------------------------*/
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1.5em;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 5px;
+}
+header a {
+  text-transform: uppercase;
+  color: black;
+}
+header svg {
+  height: 50px;
+}
+header ul {
+  display: flex;
+  gap: 1.5em;
+}
+header ul li {
+  list-style: none;
+}
+header ul li:not(:last-child) {
+  padding-right: 1em;
+  border-right: 1px solid black;
+}
+
+/*------------------------------------*\
+                  MAIN
+\*------------------------------------*/
+#home {
+  min-height: 100vh;
+  color: black;
+  padding: 6em 10%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: space-around;
+  align-items: center;
+  background: url(../img/ordinateur.jpeg) no-repeat top fixed;
+  background-size: cover;
+}
+#home span {
+  font-size: 1.2em;
+}
+#home h1 {
+  font-size: 3em;
+  margin: 10px 0;
+}
+#home h2 {
+  text-align: left;
+  text-transform: none;
+}
+#home div {
+  background-color: rgba(255, 255, 255, 0.7);
+  min-width: 360px;
+  border-radius: 20px;
+  padding: 1em 1.5em;
+  backdrop-filter: blur(4px);
+}
+#home img {
+  border-radius: 30%;
+  max-width: 320px;
+  max-height: 320px;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+}
+
+#about p {
+  max-width: 50em;
+  margin: 1em auto;
+}
+
+#resume {
+  display: flex;
+  flex-direction: column;
+}
+#resume #cv_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  max-width: 1300px;
+  margin: 1em auto;
+}
+#resume #cv_grid ul {
+  padding-left: 2em;
+}
+#resume #cv_grid #experience {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+#resume #cv_grid #school {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+#resume #cv_grid #skills {
+  grid-column: 1/2;
+}
+#resume #cv_grid #skills figcaption {
+  justify-content: center;
+}
+#resume #download_resume {
+  margin: 4em auto 1em auto;
+}
+
+#portfolio div {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 1fr;
+  max-width: 1600px;
+  margin: 2em auto;
+}
+#portfolio div article {
+  padding: 0;
+}
+#portfolio div article img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+#portfolio div article aside {
+  padding: 0 1em 1em 1em;
+}
+
+#blog {
+  padding: 3em 0.5em 1em 0.5em;
+}
+#blog div {
+  max-width: 1000px;
+  max-height: 562px;
+  margin: 1em auto;
+}
+#blog iframe {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 20px;
+}
+
+#contact {
+  background: linear-gradient(white, #2E4F4F);
+  background-size: cover;
+}
+#contact h2 {
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 1em;
+  max-width: 300px;
+  margin: 1em auto;
+}
+#contact div {
+  display: flex;
+  padding: 2em 0;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  max-width: fit-content;
+  margin: 1em auto;
+}
+#contact div aside {
+  width: 100%;
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 1em;
+}
+#contact div aside p {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  padding-right: 2em;
+}
+#contact div aside:nth-of-type(2) {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  padding: 1em 2em;
+}
+
+footer {
+  background: #2E4F4F;
+  background-size: cover;
+}
+footer p {
+  text-align: center;
+  max-width: fit-content;
+  margin: 0 auto;
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px 20px 0 0;
+  padding: 0.2em 1.2em;
+}
+
+/*------------------------------------*\
+              RESPONSIVE
+\*------------------------------------*/
+@media screen and (min-width: 768px) {
+  #home {
+    flex-wrap: nowrap;
+  }
+  #resume #cv_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  #resume #cv_grid #school {
+    grid-column: 2/3;
+  }
+  #resume #cv_grid #skills {
+    grid-column: 1/3;
+  }
+  #portfolio div {
+    grid-template-columns: 1fr 1fr;
+  }
+  #contact div {
+    flex-wrap: nowrap;
+  }
+  #contact div aside {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  #portfolio div {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

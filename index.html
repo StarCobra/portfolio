@@ -1,12 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <title>Damien's website</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <a href="#home">
+            <h3>HOME</h3>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div>
+                <span>Hello</span>
+                <h1>I'm Damien Poirot</h1>
+                <h2>A French web developper</h2>
+            </div>
+            <img src="img/Damien.jpg" alt="profile pic">
+        </section>
+
+        <section id="about">
+            <h2>About me</h2>
+            <hr>
+            <p>A CHANGÉ<br><br>
+                I did a 2-year degree in “Multimedia and Internet Professions” at the University of Reims
+                Champagne-Ardenne in Troyes with two internships in web development and web design. Then I moved to
+                Nancy to study a bachelor’s degree in “Design and Integration of Web Applications and Services” at the
+                University of Lorraine and I'm going to do an internship in web development from april to july 2023.
+                Concerning my qualities, I
+                am rigorous, serious, versatile and a good listener. In addition to having skills in web technologies
+                and able to create dynamic websites, I am passionate about photography and trains.</p>
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <hr>
+            <div id="cv_grid">
+                <div id="experience">
+                    <h3>Professional Experiences</h3>
+                    <article>
+                        <p><b>From May to July 2021</b></p>
+                        <span>Garrett Motion France, Thaons-les-Vosges</span>
+                        <h4>6 weeks of internship in the IT sector.</h4>
+                        <ul>
+                            <li>Creation of different database architecture diagrams</li>
+                            <li>Creation of a web application (VB.net)</li>
+                            <li>Various work on the company’s servers</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <p><b>From May 2017</b></p>
+                        <span>Honeywell Garrett, Thaons-les-Vosges</span>
+                        <h4>1 week of Internship</h4>
+                        <ul>
+                            <li>Visit of the different sectors of activity</li>
+                        </ul>
+                    </article>
+                </div>
+                <div id="school">
+                    <h3>Diploma</h3>
+                    <article>
+                        <p><b>2022 - 2023</b></p>
+                        <span>University Institue of Technology (IUT) Nancy-Charlemagne</span>
+                        <h4>Professional Bachelor's Degree : Web Applications (LP CIASIE)</h4>
+                        <p>Design-Integration of Web Applications and Services for Enterprise with an internship.</p>
+                    </article>
+                    <article>
+                        <p><b>2020 - 2022</b></p>
+                        <span>High school Pierre Mendes France, Epinal</span>
+                        <h4>Diploma in Digital, computer and network systems (BTS SN-IR)</h4>
+                        <p>Equivalent to vocational training certificate. Digital, computer and network systems</p>
+                    </article>
+                    <article>
+                        <p><b>2018 - 2020</b></p>
+                        <span>High school Pierre Mendes France, Epinal</span>
+                        <h4>Science and Technology of Industry and Sustainabe Developement Baccalaureate</h4>
+                        <p>With the option Technological innovation and eco-design.</p>
+                    </article>
+                </div>
+                <div id="skills">
+                    <h3>Langage skills</h3>
+                    <figcaption>
+                        <span>#HTML</span>
+                        <span>#PHP</span>
+                        <span>#JavaScript</span>
+                        <span>#TypeScript</span>
+                        <span>#Vue.js</span>
+                        <span>#Node.js</span>
+                        <span>#React.js</span>
+                        <span>#Dart</span>
+                        <span>#Flutter</span>
+                        <span>#MySQL</span>
+                        <span>#Python</span>
+                        <span>#C++</span>
+                        <span>#Sass</span>
+                        <span>#CSS</span>
+                        <span>#XML</span>
+                    </figcaption>
+
+                    <h3>- - - - -</h3>
+                    <figcaption>
+                        <span>#French</span>
+                        <span>#English</span>
+                        <span>#Spanish</span>
+                    </figcaption>
+
+                    <h3>Tech skills</h3>
+                    <figcaption>
+                        <span>#Linux</span>
+                        <span>#Docker</span>
+                        <span>#Git</span>
+                        <span>#WordPress</span>
+                        <span>#API</span>
+                        <span>#Figma</span>
+                        <span>#UML</span>
+                    </figcaption>
+                </div>
+            </div>
+
+            <a id="download_resume" href="img/cv_DamienPoirot_2023.pdf"><button>Download my Curriculum Vitae</button></a>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <hr>
+            <div>
+                <article>
+                    <img src="img/screenshot_dynamic_display.jpg" alt="screenshot">
+                    <aside>
+                        <h3>Tutored Project - Dynamic Display</h3>
+                        <p>Lorem ipsum</p>
+                        <a href="https://affichage-dynamique.netlify.app/" target="_blank">Link to access</a>
+                        -
+                        <a href="https://wailzidane.fr/affichage-dynamique" target="_blank">Link to CMS</a>
+                        -
+                        <a href="https://github.com/WZidane/affichage-dynamique" target="_blank">Source code GitHub</a>
+                        <h4>Tech list</h4>
+                        <figcaption>
+                            <span>#Directus</span>
+                            <span>#Vue.js</span>
+                            <span>#Axios</span>
+                            <span>#API</span>
+                        </figcaption>
+                    </aside>
+                </article>
+                <article>
+                    <img src="img/screenshot_mediaphoto.jpg" alt="screenshot">
+                    <aside>
+                        <h3>Web app photo sharing - Media Photo</h3>
+                        <p>Lorem ipsum</p>
+                        <a href="https://webetu.iutnc.univ-lorraine.fr/www/zidane13u/Atelier-1/" target="_blank">Link to access</a>
+                        -
+                        <a href="https://github.com/StarCobra/Atelier-1" target="_blank">Source code GitHub</a>
+                        <h4>Tech list</h4>
+                        <figcaption>
+                            <span>#PHP</span>
+                            <span>#HTML</span>
+                            <span>#Sass</span>
+                            <span>#CSS</span>
+                            <span>#MySQL</span>
+                        </figcaption>
+                    </aside>
+                </article>
+                <article>
+                    <img src="img/screenshot_mysterious_number.jpg" alt="screenshot">
+                    <aside>
+                        <h3>Little game in JS - Mysterious Number</h3>
+                        <p>Lorem ipsum</p>
+                        <a href="https://starcobra.github.io/JS-Mysterious_Number/ " target="_blank">Link to access</a>
+                        -
+                        <a href="https://github.com/StarCobra/JS-Mysterious_Number" target="_blank">Source code GitHub</a>
+                        <h4>Tech list</h4>
+                        <figcaption>
+                            <span>#HTML</span>
+                            <span>#CSS</span>
+                            <span>#JavaScript</span>
+                        </figcaption>
+                    </aside>
+                </article>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <hr>
+            <div>
+                <iframe width="866" height="487" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    title="Rick Astley - Never Gonna Give You Up (Official Music Video)" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact me</h2>
+            <div>
+                <aside>
+                    <p><span>
+                            <svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 800 800" width="25" height="25">
+                                <path class="cls-1"
+                                    d="M405.9.19A35.31,35.31,0,0,0,402.32,0l-2.44,0-2.2,0a32,32,0,0,0-3.55.19C220.35,4.57,79.46,148.68,79.46,322.86c0,223.85,249,430.53,299,469.68a35,35,0,0,0,43.18,0c49.92-39.15,299-245.83,299-469.68C720.54,148.68,579.69,4.57,405.9.19ZM400,719.85c-67.06-56.73-250.6-227.52-250.6-397C149.4,185.63,261,72.22,398.24,70c.56,0,1.11,0,1.67-.06h.22c.55,0,1.09.06,1.65.06C539,72.22,650.63,185.63,650.63,322.86,650.6,492.33,467.06,663.12,400,719.85Z" />
+                                <path class="cls-1"
+                                    d="M402.33,162A147.82,147.82,0,1,0,550.15,309.79,147.82,147.82,0,0,0,402.33,162Zm0,225.7a77.89,77.89,0,1,1,77.89-77.88A78,78,0,0,1,402.33,387.66Z" />
+                            </svg>
+                        </span>Epinal, Nancy, Lorraine</p>
+                    <p><span>
+                            <svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 800 800" width="25" height="25">
+                                <path d="M702.28,128.45H97.72A97.83,97.83,0,0,0,0,226.16V573.84a97.83,97.83,0,0,0,97.72,97.71H702.28A97.83,97.83,0,0,0,800,573.84V226.17A97.82,97.82,0,0,0,702.28,128.45ZM654.53,192.2,400,356.18l-254.53-164Zm47.75,415.61H97.72a34,34,0,0,1-34-34V228L380.33,431.56c.43.26.88.44,1.32.69s.92.5,1.39.73a37.19,37.19,0,0,0,7.57,2.95c.26.08.53.11.79.17a37.43,37.43,0,0,0,8.58,1.09H400a36.88,36.88,0,0,0,8.58-1.09c.26-.06.53-.09.79-.17A37.19,37.19,0,0,0,417,433c.47-.23.93-.48,1.39-.73s.89-.43,1.32-.69L736.27,228V573.84A34,34,0,0,1,702.28,607.81Z" />
+                            </svg>
+                        </span>
+                        <a href="mailto:damienpoirot@yahoo.com">damienpoirot@yahoo.com</a> </p>
+                </aside>
+                <aside>
+                    <a href="https://www.instagram.com/damien_poirot/" target="_blank">
+                        <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            width="60" height="60">
+                            <path
+                                d="M14.83,6.3H9.17A2.63,2.63,0,0,0,6.3,8.67a2.09,2.09,0,0,0,0,.5v5.66A2.63,2.63,0,0,0,8.67,17.7a2.09,2.09,0,0,0,.5,0h5.66a2.63,2.63,0,0,0,2.87-2.37,2.09,2.09,0,0,0,0-.5V9.17A2.63,2.63,0,0,0,15.33,6.3,2.09,2.09,0,0,0,14.83,6.3ZM12,15.6A3.6,3.6,0,1,1,15.6,12,3.6,3.6,0,0,1,12,15.6Zm3.74-6.5a.84.84,0,1,1,.84-.84.85.85,0,0,1-.84.84ZM14.33,12A2.33,2.33,0,1,1,12,9.67h0A2.33,2.33,0,0,1,14.33,12ZM12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0Zm7,14.89A3.87,3.87,0,0,1,15.39,19a4.17,4.17,0,0,1-.5,0H9.11A3.87,3.87,0,0,1,5,15.39a4.17,4.17,0,0,1,0-.5V9.11A3.87,3.87,0,0,1,8.61,5h6.28A3.87,3.87,0,0,1,19,8.61a4.17,4.17,0,0,1,0,.5v5.78Z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/StarCobra" target="_blank">
+                        <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98"
+                            width="60" height="60">
+                            <path class="cls-1"
+                                d="M48.85,0A49.27,49.27,0,0,0,33.4,95.91c2.43.49,3.32-1.06,3.32-2.37,0-1.14-.08-5.05-.08-9.12-13.59,2.93-16.42-5.87-16.42-5.87-2.18-5.7-5.42-7.17-5.42-7.17-4.45-3,.32-3,.32-3,4.94.32,7.53,5,7.53,5,4.36,7.49,11.4,5.38,14.23,4.07A10.48,10.48,0,0,1,40,70.89c-10.84-1.14-22.25-5.38-22.25-24.28a19.24,19.24,0,0,1,5-13.2c-.49-1.22-2.19-6.28.48-13,0,0,4.13-1.3,13.43,5.05a47.51,47.51,0,0,1,12.21-1.63,47,47,0,0,1,12.22,1.63c9.3-6.35,13.42-5.05,13.42-5.05,2.67,6.76,1,11.82.49,13a18.91,18.91,0,0,1,5,13.2c0,18.9-11.4,23.06-22.32,24.28C59.45,72.44,61,75.37,61,80c0,6.6-.08,11.9-.08,13.52,0,1.31.89,2.86,3.31,2.37A49.27,49.27,0,0,0,48.85,0Z" />
+                        </svg>
+                    </a>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Damien Poirot, 2020-2023 | All rights reserved.</p>
+    </footer>
+</body>
+
 </html>
